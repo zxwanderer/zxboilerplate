@@ -2,16 +2,17 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "SjASMPlus",
+            "label": "build",
             "type": "shell",
-            "command": "${workspaceFolder}/_sjasmplus/sjasmplus",
+            "command": "make run",
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    //"PROJECT_NAME": "project_name",
+                    "EMULATOR_BINARY": "xpeccy",
+                    "COPY_SNAPSHOT_TO": "/tmp/quicksave.sna"
+                }
             },
-            "args": [
-                "--nologo",
-                "main.asm"
-            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
