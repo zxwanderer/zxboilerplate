@@ -12,7 +12,10 @@ start	di : ld sp, $-2
 
 	ld a,#5c, i,a, hl,interr, (#5cff),hl : im 2 : ei
 
-	jr $
+	; main loop
+1	xor a : out (#fe), a
+	inc a : inc a :  out (#fe), a
+	jr 1b
 
 interr	di
 	push af,bc,de,hl,ix,iy
@@ -33,7 +36,7 @@ interr	di
 
 	; build
 	if (_ERRORS == 0 && _WARNINGS == 0)
-	  savesna SNA_FILENAME, start		; SNA_FILENAME defined in Makefile
+	  savesna SNA_FILENAME, start			; SNA_FILENAME defined in Makefile
 	  savebin BIN_FILENAME, start, $-start 	; BIN_FILENAME defined in Makefile
 	endif
 	

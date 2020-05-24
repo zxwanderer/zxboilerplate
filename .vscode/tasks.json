@@ -9,7 +9,7 @@
                 "cwd": "${workspaceFolder}",
                 "env": {
                     //"PROJECT_NAME": "project_name",
-                    "EMULATOR_BINARY": "xpeccy",
+                    "EMULATOR_BINARY": "unreal",
                     "COPY_SNAPSHOT_TO": "/tmp/quicksave.sna"
                 }
             },

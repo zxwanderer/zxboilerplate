@@ -5,7 +5,7 @@ ifeq ($(PROJECT_NAME),)
 endif
 
 ifeq ($(EMULATOR_BINARY),)
-	EMULATOR_BINARY := xpeccy
+	EMULATOR_BINARY := unreal
 endif
 
 ifeq ($(COPY_SNAPSHOT_TO),)
