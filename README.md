@@ -12,6 +12,9 @@ That's all! Now you can use `Run build task` (Ctrl+Shift+B on Windows or ⌘+B o
 
 ## Available commands:
 `make build` Default: build project
+
 `make run`  Build and run snapshot in emulator
+
 `make copy` Build and copy snapshot to given path
+
 `make clean` Remove artifacts
