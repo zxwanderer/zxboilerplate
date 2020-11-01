@@ -2,13 +2,16 @@
     "version": "2.0.0",
     "options": {
         "env": {
-            "PROJECT_NAME": "project_name"
+            // Custom project name. If not defined, directory name used.
+            "PROJECT_NAME": "zxboilerplate"
         }
     },
     "windows": {
         "options": {
             "env": {
+                // ZX Spectrum emulator executable (Windows)
                 "EMULATOR_BINARY": "unreal",
+                // Copy snapshot to this file (Windows)
                 "COPY_SNAPSHOT_TO": "C:/TEMP/quicksave.sna"
             }
         }
@@ -16,7 +19,9 @@
     "linux": {
         "options": {
             "env": {
+                // ZX Spectrum emulator executable (Linux)
                 "EMULATOR_BINARY": "xpeccy",
+                // Copy snapshot to this file (Linux)
                 "COPY_SNAPSHOT_TO": "/tmp/quicksave.sna"
             }
         }
